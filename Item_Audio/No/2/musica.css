@@ -1,0 +1,16 @@
+.columna {
+    width: 33.33%;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .columna h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  audio {
+    width: 100%;
+  }
+  

@@ -1,0 +1,24 @@
+header {
+	text-align: center;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+td {
+	padding: 10px;
+	border: 1px solid green;
+}
+
+.fila1:hover {
+	background-color: yellow;
+}
+
+.fila2:hover {
+	background-color: cyan;
+}
+
+.fila3:hover {
+	background-color: magenta;
+}
