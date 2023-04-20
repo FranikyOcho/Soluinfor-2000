@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CALCULADORA_JS</title>
+	<style type="text/css">
+		body {
+			font-family: Arial, sans-serif;
+		}
+
+		input[type=button] {
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			padding: 10px 20px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+		}
+
+		input[type=text] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			box-sizing: border-box;
+			border: 2px solid #ccc;
+			border-radius: 4px;
+			background-color: #f8f8f8;
+			font-size: 16px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Calculadora</h1>
+	<form>
+		<input type="text" id="resultado" disabled><br>
+
+		<input type="button" value="1" onclick="agregar('1')">
+		<input type="button" value="2" onclick="agregar('2')">
+		<input type="button" value="3" onclick="agregar('3')">
+		<input type="button" value="+" onclick="agregar('+')"><br>
+
+		<input type="button" value="4" onclick="agregar('4')">
+		<input type="button" value="5" onclick="agregar('5')">
+		<input type="button" value="6" onclick="agregar('6')">
+		<input type="button" value="-" onclick="agregar('-')"><br>
+
+		<input type="button" value="7" onclick="agregar('7')">
+		<input type="button" value="8" onclick="agregar('8')">
+		<input type="button" value="9" onclick="agregar('9')">
+		<input type="button" value="*" onclick="agregar('*')"><br>
+
+		<input type="button" value="C" onclick="limpiar()">
+		<input type="button" value="0" onclick="agregar('0')">
+		<input type="button" value="=" onclick="calcular()">
+		<input type="button" value="/" onclick="agregar('/')"><br>
+	</form>
+
+	<script type="text/javascript">
+		var valor = '';
+
+		function agregar(digito) {
+			valor += digito;
+			document.getElementById('resultado').value = valor;
+		}
+
+		function limpiar() {
+			valor = '';
+			document.getElementById('resultado').value = '';
+		}
+
+		function calcular() {
+			try {
+				var resultado = eval(valor);
+				document.getElementById('resultado').value = resultado;
+			} catch(e) {
+				document.getElementById('resultado').value = 'Error';
+			}
+			valor = '';
+		}
+	</script>
+</body>
+</html>
