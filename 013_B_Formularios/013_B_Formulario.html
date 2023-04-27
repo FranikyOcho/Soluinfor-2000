@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario de IA</title>
+	<link rel="stylesheet" type="text/css" href="css/013_B_Formulario.css">
+</head>
+<body>
+	<h1>BIENVENIDOS AL FORMULARIO DE IA</h1>
+
+	<form id="formulario" onsubmit="guardarDatos(event)">
+		<label for="nombre">Nombre:</label>
+		<input type="text" id="nombre" required>
+
+		<label for="apellidos">Apellidos:</label>
+		<input type="text" id="apellidos" required>
+
+		<label for="email">E-Mail:</label>
+		<input type="email" id="email" required>
+
+		<input type="submit" value="Guardar">
+
+		<input type="button" value="Limpiar" onclick="limpiarFormulario()">
+	</form>
+
+	<ul id="lista-datos"></ul>
+
+	<script src="JavaScritp/013_B_Formulario.js"></script>
+</body>
+</html>
+
