@@ -1,0 +1,10 @@
+En código Python crearas la siguiente aplicacion sencilla
+1º Crear un ventana con el titulo: ELIMINAR FICHEROS %TEMP% V.1
+2º Dentro de la ventana vas ha poner los siguientes botones. 
+
+Boton1 se llamara: 1 Eliminar archivos temp. y ejecutara los siguiente comandos. 
+
+Boton2 se llamara: 2 Salir: que Abrirá un mensaje flotante que pondrá: como titulo .Gracias. mensaje: Salu2, hasta la próxima y al pulsar el botón de Aceptar o Salir
+cerrara la  aplicacion. 
+Los botones tienen que estar centrados y la vienta lo suficiente grande para que se vea el título. 
+______________________________________
